@@ -1,5 +1,112 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+.body {
+  margin: auto;
+}
+
 .page {
   min-width: 1280px;
-  background-color: #798494;
-  color: white;
+  background-color: white;
+  color: black;
+}
+
+.header {
+
+}
+.header__logo {
+
+}
+.header__lang-links {
+
+}
+.header__lang-link {
+
+}
+.header__lang-link_ru {
+
+}
+.header__lang-link_en {
+
+}
+.lead {
+
+}
+.lead__title {
+
+}
+.lead__subtitle {
+
+}
+.lead__image {
+
+}
+.lead__caption {
+
+}
+.intro {
+
+}
+.intro__title {
+
+}
+.intro__text {
+
+}
+.intro__list {
+
+}
+.intro__list-item {
+
+}
+.photo-grid {
+
+}
+.photo-grid__item {
+
+}
+.places {
+
+}
+.places__card {
+
+}
+.places__card-title {
+
+}
+.places__card-image {
+
+}
+.places__card-website {
+
+}
+.places__card-paragraph {
+
+}
+.cover {
+
+}
+.cover__title {
+
+}
+.cover__subtitle {
+
+}
+.footer {
+
+}
+.footer__container {
+
+}
+.footer__links {
+
+}
+.footer__link {
+
+}
+.footer__copyright {
+
 }
