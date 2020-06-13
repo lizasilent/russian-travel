@@ -82,7 +82,7 @@ html { font-family: 'Inter', sans-serif; }
 .lead__title {
   border: 1px solid rgb(173, 173, 100);
   font-style: normal;
-  font-weight: 900px;
+  font-weight: 900;
   font-size: 96px;
   line-height: 0.9;
   width: 720px;
@@ -118,67 +118,113 @@ html { font-family: 'Inter', sans-serif; }
   line-height: 1.4;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  max-width: 159px;
+  min-width: 159px;
   min-height: 14px;
   margin:0;
 }
 
 
 .intro {
-  width: 60%;
-  height: 428px;
+  width: 80%;
   border: 1px solid pink;
+  margin: 0 auto 92px auto;
 }
+
+.intro__card {
+  border: 1px solid red;
+  width: 68%;
+  min-height: 428px;
+}
+
 .intro__title {
   font-style: normal;
   font-weight: 900;
   font-size: 54px;
   line-height: 1;
+  margin:0 auto 40px auto;
 }
 .intro__text {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 2;
+  line-height: 26px;
+  margin:0 auto 32px auto;
 }
 .intro__list {
-
+  list-style: none;
+  padding:0;
+  margin:0;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
 }
-.intro__list-item {
 
-}
 .photo-grid {
   border: 1px solid rgb(15, 122, 141);
   width: 100%;
-
+  max-height: 671px;
+  padding:0;
 }
+
 .photo-grid__template {
-
-
+  position: relative;
+  width: 100%;
+  list-style: none;
+  padding:0;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
 }
 
 .photo-grid__item {
-
+  max-width:100%;
 }
+
+@media (max-width: 1024px)
+{
+  .photo-grid__template {
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+}
+
 .places {
   width: 80%;
   border: 1px solid rgb(216, 24, 56);
 }
 .places__card {
+  border: 1px solid yellow;
 
 }
 .places__card-title {
+  border: 1px solid rgb(230, 153, 52);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
 
 }
 .places__card-image {
+  border: 1px solid rgb(230, 153, 52);
+  max-width: 460px;
+  max-height: 460px;
 
 }
 .places__card-website {
+  border: 1px solid rgb(230, 153, 52);
 
 }
 .places__card-paragraph {
+  border: 1px solid rgb(230, 153, 52);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  }
 
-}
+
+
 .cover {
   width: 100%;
   border: 1px solid orange;
