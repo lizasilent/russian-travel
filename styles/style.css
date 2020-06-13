@@ -303,18 +303,21 @@ html {
   width: 100%;
   border: 1px solid orangered;
   position: relative;
+}
+.footer__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
 }
-.footer__container {
-}
 .footer__links {
   list-style: none;
-  
+  border: 1px solid rgb(114, 100, 37);
 }
 .footer__link {
+  text-decoration: none;
+  color: white;
 }
 .footer__copyright {
+  border: 1px solid rgb(184, 171, 57);
 }
