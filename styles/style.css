@@ -57,7 +57,14 @@ html {
 .header__lang-link {
   border: 1px solid rgb(15, 228, 15);
   color: white;
+  transition: opacity 0.2s linear;
 }
+
+.header__lang-link:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
 .header__lang-link_ru {
   max-width: 30px;
   max-height: 28px;
@@ -160,7 +167,7 @@ html {
   position: relative;
   border: 1px solid rgb(15, 122, 141);
   width: 100%;
-  max-height: 671px;
+  min-height: 671px;
   padding: 0;
 }
 
@@ -195,12 +202,14 @@ html {
 }
 
 .two-columns {
+  position: relative;
   border: 1px solid yellow;
   display: grid;
   grid-template-columns: 460px 1fr;
-  grid-template-rows: 152px 1fr;
+  grid-template-rows: minmax(min-content, max-content) 1fr;
   grid-gap: 40px;
   margin-bottom: 80px;
+
 }
 
 .two-columns__title {
@@ -209,10 +218,7 @@ html {
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
-  min-height: 152px;
   margin:0;
-
-
 }
 
 .two-columns__image {
@@ -223,6 +229,7 @@ html {
 
 .url-zone {
   border: 1px solid rgb(217, 255, 0);
+  align-self: end;
 
 }
 
@@ -245,14 +252,20 @@ html {
   line-height: 22px;
   text-decoration-line: underline;
   color: white;
+  transition: opacity 0.2s linear;
+}
+
+.two-columns__link:hover {
+opacity: 0.6;
+cursor: pointer;
+
 }
 
 .two-columns__paragraphs {
-
 border: 1px solid rgb(230, 153, 52);
-
-
+max-width: 484px;
 }
+
 .two-columns__paragraph {
   border: 1px solid rgb(230, 153, 52);
   font-style: normal;
@@ -260,12 +273,14 @@ border: 1px solid rgb(230, 153, 52);
   font-size: 18px;
   line-height: 30px;
   margin:0;
+  margin-bottom:24px;
 }
 
 .two-columns__paragraph:last-child {
-  margin-top:24px;
+  margin-bottom:0;
 
 }
+
 
 .cover {
   border: 1px solid orange;
@@ -277,11 +292,11 @@ border: 1px solid rgb(230, 153, 52);
 
 }
 
-.cover__container {
+.cover__link {
   background-color: rgba(42, 44, 47, 0.3);
   position: relative;
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -290,6 +305,12 @@ border: 1px solid rgb(230, 153, 52);
   text-decoration: none;
   color: white;
   padding: 245px 0 32px 0;
+  transition: background-color 0.2s linear;
+}
+
+.cover__link:hover {
+  background-color: rgba(42, 44, 47, 0.8);
+  cursor: pointer;
 }
 
 .cover__title {
@@ -331,7 +352,9 @@ border: 1px solid rgb(230, 153, 52);
   flex-direction: row;
   padding: 0;
   margin: 0;
+
 }
+
 
 .footer__link {
   text-decoration: none;
@@ -341,6 +364,12 @@ border: 1px solid rgb(230, 153, 52);
   font-size: 16px;
   line-height: 18px;
   margin-right: 18px;
+  transition: opacity 0.2s linear;
+}
+
+
+.footer__link:hover {
+  opacity: 0.6;
 }
 
 .footer__copyright {
