@@ -85,8 +85,7 @@ html {
   font-weight: 900;
   font-size: 96px;
   line-height: 0.9;
-  width: 720px;
-  max-width: 100%;
+  max-width: 720px;
   min-height: 200px;
   margin-top: 0;
   margin-bottom: 32px;
@@ -207,6 +206,7 @@ html {
   border: 1px solid rgb(119, 119, 8);
   display: flex;
   flex-direction: column;
+  align-content: space-between;
   max-width: 460px;
   margin-right: 40px;
 }
@@ -242,7 +242,7 @@ html {
   font-size: 12px;
   line-height: 12px;
   letter-spacing: 0.2em;
-  margin: 106px 0 12px;
+  margin-bottom: 12px;
 }
 
 .two-columns__second-column-link {
@@ -266,16 +266,26 @@ html {
 }
 
 .cover {
+  position:relative;
   width: 100%;
   min-height: 740px;
-  border: 1px solid orange;
   background: url(../images/cover-trains.jpg) no-repeat;
-  background-size: contain;
+  background-size: cover;
+  border: 1px solid orange;
+}
+
+.cover__container {
+  background-color: rgba(42, 44, 47, .3);
+  position:relative;
+  width: 100%;
+  min-height: 740px;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+
 }
 
 .cover__title {
@@ -283,9 +293,9 @@ html {
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
-  text-align: center;
-  width: 560px;
-  height: 152px;
+  max-width: 560px;
+  min-height: 152px;
+  margin: 245px auto 32px;
   border: 1px solid black;
 }
 .cover__subtitle {
@@ -293,9 +303,9 @@ html {
   font-weight: normal;
   font-size: 18px;
   line-height: 22px;
-  text-align: center;
-  width: 360px;
-  height: 66px;
+  max-width: 360px;
+  min-height: 66px;
+  margin: 0;
   border: 1px solid black;
 }
 
@@ -303,6 +313,7 @@ html {
   width: 100%;
   border: 1px solid orangered;
   position: relative;
+  margin-top: 92px;
 }
 .footer__container {
   display: flex;
@@ -311,13 +322,23 @@ html {
   align-items: flex-end;
 }
 .footer__links {
-  list-style: none;
   border: 1px solid rgb(114, 100, 37);
+  list-style: none;
+  display: flex;
+  flex-direction: row;
 }
 .footer__link {
   text-decoration: none;
   color: white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
 }
 .footer__copyright {
   border: 1px solid rgb(184, 171, 57);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
 }
