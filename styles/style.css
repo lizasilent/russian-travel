@@ -79,7 +79,8 @@ html {
   width: 80%;
   max-height: 1005px;
   border: 1px solid rgb(236, 236, 159);
-  margin: 0 auto 92px auto;
+  margin: 0 auto;
+  padding-bottom: 92px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,7 +102,7 @@ html {
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
-  line-height: 1.6;
+  line-height: 36px;
   max-width: 640px;
   min-height: 72px;
   margin-top: 0;
@@ -129,9 +130,10 @@ html {
 }
 
 .intro {
+  position: relative;
   width: 80%;
+  margin: 0 auto;
   border: 1px solid pink;
-  margin: 0 auto 92px auto;
 }
 
 .intro__card {
@@ -168,7 +170,8 @@ html {
   border: 1px solid rgb(15, 122, 141);
   width: 100%;
   min-height: 671px;
-  padding: 0;
+  object-fit: cover;
+  padding: 92px 0;
 }
 
 .photo-grid__template {
@@ -184,6 +187,7 @@ html {
 
 .photo-grid__item {
   max-width: 100%;
+  position: relative;
 }
 
 @media (max-width: 1024px) {
@@ -197,7 +201,7 @@ html {
   position: relative;
   width: 80%;
   border: 1px solid rgb(216, 24, 56);
-  padding: 92px 0 0 0;
+  padding: 0;
   margin: 0 auto;
 }
 
@@ -209,7 +213,6 @@ html {
   grid-template-rows: minmax(min-content, max-content) 1fr;
   grid-gap: 40px;
   margin-bottom: 80px;
-
 }
 
 .two-columns__title {
@@ -218,7 +221,7 @@ html {
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
-  margin:0;
+  margin: 0;
 }
 
 .two-columns__image {
@@ -230,7 +233,6 @@ html {
 .url-zone {
   border: 1px solid rgb(217, 255, 0);
   align-self: end;
-
 }
 
 .two-columns__url {
@@ -240,7 +242,7 @@ html {
   font-size: 12px;
   line-height: 12px;
   letter-spacing: 0.2em;
-  margin-top:0;
+  margin-top: 0;
   margin-bottom: 12px;
 }
 
@@ -256,14 +258,13 @@ html {
 }
 
 .two-columns__link:hover {
-opacity: 0.6;
-cursor: pointer;
-
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 .two-columns__paragraphs {
-border: 1px solid rgb(230, 153, 52);
-max-width: 484px;
+  border: 1px solid rgb(230, 153, 52);
+  max-width: 484px;
 }
 
 .two-columns__paragraph {
@@ -272,15 +273,13 @@ max-width: 484px;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-  margin:0;
-  margin-bottom:24px;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .two-columns__paragraph:last-child {
-  margin-bottom:0;
-
+  margin-bottom: 0;
 }
-
 
 .cover {
   border: 1px solid orange;
@@ -289,14 +288,15 @@ max-width: 484px;
   min-height: 740px;
   background: url(../images/cover-trains.jpg) no-repeat;
   background-size: cover;
-
+  background-position: 100%;
 }
 
 .cover__link {
   background-color: rgba(42, 44, 47, 0.3);
+  background-size: cover;
   position: relative;
   width: 100%;
-  max-height: 100%;
+  min-height: 740px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -337,7 +337,7 @@ max-width: 484px;
   width: 100%;
   border: 1px solid orangered;
   position: relative;
-  margin-top: 92px;
+  padding-top: 92px;
 }
 .footer__container {
   display: flex;
@@ -352,9 +352,7 @@ max-width: 484px;
   flex-direction: row;
   padding: 0;
   margin: 0;
-
 }
-
 
 .footer__link {
   text-decoration: none;
@@ -366,7 +364,6 @@ max-width: 484px;
   margin-right: 18px;
   transition: opacity 0.2s linear;
 }
-
 
 .footer__link:hover {
   opacity: 0.6;
@@ -380,4 +377,3 @@ max-width: 484px;
   line-height: 16px;
   margin: 0;
 }
-
