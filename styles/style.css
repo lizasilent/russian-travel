@@ -19,7 +19,6 @@ html {
 }
 
 .page {
-  min-width: 320px;
   max-width: 1280px;
   background-color: #2a2c2f;
   color: white;
@@ -197,55 +196,48 @@ html {
 
 .two-columns {
   border: 1px solid yellow;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  grid-template-rows: 152px 1fr;
+  grid-gap: 40px;
   margin-bottom: 80px;
 }
 
-.two-columns__first-column {
-  border: 1px solid rgb(119, 119, 8);
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  max-width: 460px;
-  margin-right: 40px;
-}
-
-.two-columns__first-column-title {
+.two-columns__title {
   border: 1px solid rgb(230, 153, 52);
   font-style: normal;
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
-  max-width: 100%;
-  max-height: 152px;
-  margin-top: 0;
-  margin-bottom: 48px;
+  min-height: 152px;
+  margin:0;
+
+
 }
 
-.two-columns__first-column-image {
+.two-columns__image {
   border: 1px solid rgb(230, 153, 52);
-  width: 460px;
-  height: 460px;
+  max-width: 460px;
+  max-height: 460px;
 }
 
-.two-columns__second-column {
-  border: 1px solid rgb(90, 142, 172);
-  display: flex;
-  flex-direction: column;
+.url-zone {
+  border: 1px solid rgb(217, 255, 0);
+
 }
 
-.two-columns__second-column-url {
+.two-columns__url {
   border: 1px solid rgb(230, 153, 52);
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 12px;
   letter-spacing: 0.2em;
+  margin-top:0;
   margin-bottom: 12px;
 }
 
-.two-columns__second-column-link {
+.two-columns__link {
   border: 1px solid rgb(230, 153, 52);
   font-style: normal;
   font-weight: normal;
@@ -255,37 +247,49 @@ html {
   color: white;
 }
 
-.two-columns__second-column-paragraph {
+.two-columns__paragraphs {
+
+border: 1px solid rgb(230, 153, 52);
+
+
+}
+.two-columns__paragraph {
   border: 1px solid rgb(230, 153, 52);
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-  margin-top: 24px;
-  margin-bottom: 0;
+  margin:0;
+}
+
+.two-columns__paragraph:last-child {
+  margin-top:24px;
+
 }
 
 .cover {
-  position:relative;
+  border: 1px solid orange;
+  position: relative;
   width: 100%;
   min-height: 740px;
   background: url(../images/cover-trains.jpg) no-repeat;
   background-size: cover;
-  border: 1px solid orange;
+
 }
 
 .cover__container {
-  background-color: rgba(42, 44, 47, .3);
-  position:relative;
+  background-color: rgba(42, 44, 47, 0.3);
+  position: relative;
   width: 100%;
-  min-height: 740px;
+  height: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-
-
+  text-decoration: none;
+  color: white;
+  padding: 245px 0 32px 0;
 }
 
 .cover__title {
@@ -295,7 +299,6 @@ html {
   line-height: 76px;
   max-width: 560px;
   min-height: 152px;
-  margin: 245px auto 32px;
   border: 1px solid black;
 }
 .cover__subtitle {
@@ -326,7 +329,10 @@ html {
   list-style: none;
   display: flex;
   flex-direction: row;
+  padding: 0;
+  margin: 0;
 }
+
 .footer__link {
   text-decoration: none;
   color: white;
@@ -334,11 +340,15 @@ html {
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+  margin-right: 18px;
 }
+
 .footer__copyright {
   border: 1px solid rgb(184, 171, 57);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+  margin: 0;
 }
+
