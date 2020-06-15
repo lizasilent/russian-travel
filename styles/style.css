@@ -21,15 +21,16 @@ html {
 }
 
 .page {
-  max-width: 1280px;
+  min-width: 320px;
+  max-width: 1184px;
   background-color: #2a2c2f;
   color: white;
-  padding: 24px 48px;
   margin: 0 auto;
 }
 
 .header {
   border: 1px solid green;
+  padding: 28px 48px 56px;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -37,7 +38,6 @@ html {
   align-items: flex-end;
   min-height: 52px;
   width: 100%;
-  padding: 0 20px;
 }
 .header__logo {
   border: 1px solid rgb(15, 228, 15);
@@ -78,17 +78,15 @@ html {
 }
 .lead {
   width: 80%;
-  max-height: 1005px;
+  min-height: 1005px;
   border: 1px solid rgb(236, 236, 159);
   margin: 0 auto;
-  padding-top: 56px;
   padding-bottom: 92px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-
 
 .lead__title {
   border: 1px solid rgb(173, 173, 100);
@@ -106,7 +104,7 @@ html {
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 1.2;
   max-width: 640px;
   min-height: 72px;
   margin-top: 0;
@@ -175,7 +173,7 @@ html {
   width: 100%;
   min-height: 671px;
   object-fit: cover;
-  padding: 92px 0;
+  padding: 55px 55px 129px 41px;
 }
 
 .photo-grid__template {
@@ -194,8 +192,6 @@ html {
   position: relative;
 }
 
-
-
 .places {
   position: relative;
   width: 80%;
@@ -208,11 +204,13 @@ html {
   position: relative;
   border: 1px solid yellow;
   display: grid;
-  min-height: 660px;
   grid-template-columns: 460px 1fr;
   grid-template-rows: minmax(min-content, max-content) 1fr;
-  grid-gap: 40px;
+  grid-gap: 48px 40px;
   margin-bottom: 80px;
+}
+.two-columns:last-child {
+  margin-bottom: 92px;
 }
 
 .two-columns__title {
@@ -288,12 +286,15 @@ html {
   min-height: 740px;
   background: url(../images/cover-trains.jpg) no-repeat;
   background-size: cover;
-
+  background-position: 100%;
+  padding: 0 48px;
 }
 
 .cover__link {
   background-color: rgba(42, 44, 47, 0.3);
-  max-width: 100%;
+  background-size: cover;
+  position: relative;
+  width: 100%;
   min-height: 740px;
   margin: auto;
   display: flex;
@@ -302,8 +303,8 @@ html {
   text-align: center;
   text-decoration: none;
   color: white;
+  padding: 245px 0 32px 0;
   transition: background-color 0.2s linear;
-
 }
 
 .cover__link:hover {
@@ -312,7 +313,6 @@ html {
 }
 
 .cover__title {
-  position: relative;
   font-style: normal;
   font-weight: 900;
   font-size: 72px;
@@ -320,7 +320,6 @@ html {
   max-width: 560px;
   min-height: 152px;
   border: 1px solid black;
-  margin: 245px auto 32px;
 }
 .cover__subtitle {
   font-style: normal;
@@ -337,7 +336,7 @@ html {
   width: 100%;
   border: 1px solid orangered;
   position: relative;
-  padding-top: 92px;
+  padding: 92px 48px 24px;
 }
 .footer__container {
   display: flex;
@@ -378,38 +377,81 @@ html {
   margin: 0;
 }
 
-@media screen and (max-width: 980px) {
-  .lead{
-  width: 100%;}
-
-  .intro{
-    width: 100%;}
-
-  .places {
-      width: 100%;}
-
+@media screen and (max-width: 1024px) {
+  .lead {
+    width: 100%;
+    padding-top: 48px;
+  }
+  .intro {
+    width: 100%;
+  }
+  .photo-grid {
+    padding: 92px 0 92px;
+  }
   .photo-grid__template {
     grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(3, 1fr);}
-
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .places {
+    width: 100%;
+  }
+  .two-columns {
+    grid-template-columns: 440px 1fr;
+    grid-template-rows: minmax(min-content, max-content) 1fr;
+    grid-gap: 48px 32px;
+  }
   .cover {
-
-    }
-
+    position: relative;
+    background-position: calc(100% + 96px);
+    left: -48px;
+  }
 }
 
+@media screen and (max-width: 768px) {
+  .page {
+    padding: 28px 24px;
+  }
+  .lead__image {
+    width: calc(100% + 48px);
+    position: relative;
+    left: -24px;
+    right: -24px;
+  }
 
-@media screen and  (max-width: 600px) {
+  .intro {
+  }
+
+  .photo-grid {
+  }
+
   .photo-grid__template {
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .places {
+  }
+
+  .two-columns {
+    grid-template-columns: 440px 1fr;
+    grid-template-rows: minmax(min-content, max-content) 1fr;
+    grid-gap: 48px 28px;
+    margin-bottom: 72px;
+  }
+  .two-columns:last-child {
+    margin-bottom: 88px;
+  }
+
+  .cover {
+  }
+
+  .footer {
+  }
 }
 
-@media screen and  (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .photo-grid__template {
     grid-template-rows: repeat(12, 1fr);
     grid-template-columns: 1, 1fr;
   }
 }
-
