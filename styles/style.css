@@ -15,6 +15,8 @@ html {
 }
 
 .body {
+  width: 100%;
+  height: 100%;
   margin: auto;
 }
 
@@ -36,7 +38,6 @@ html {
   min-height: 52px;
   width: 100%;
   padding: 0 20px;
-  margin-bottom: 56px;
 }
 .header__logo {
   border: 1px solid rgb(15, 228, 15);
@@ -80,12 +81,15 @@ html {
   max-height: 1005px;
   border: 1px solid rgb(236, 236, 159);
   margin: 0 auto;
+  padding-top: 56px;
   padding-bottom: 92px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
+
+
 .lead__title {
   border: 1px solid rgb(173, 173, 100);
   font-style: normal;
@@ -190,12 +194,7 @@ html {
   position: relative;
 }
 
-@media (max-width: 1024px) {
-  .photo-grid__template {
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+
 
 .places {
   position: relative;
@@ -209,6 +208,7 @@ html {
   position: relative;
   border: 1px solid yellow;
   display: grid;
+  min-height: 660px;
   grid-template-columns: 460px 1fr;
   grid-template-rows: minmax(min-content, max-content) 1fr;
   grid-gap: 40px;
@@ -226,11 +226,11 @@ html {
 
 .two-columns__image {
   border: 1px solid rgb(230, 153, 52);
-  max-width: 460px;
-  max-height: 460px;
+  width: 100%;
+  object-fit: cover;
 }
 
-.url-zone {
+.two-columns__url-zone {
   border: 1px solid rgb(217, 255, 0);
   align-self: end;
 }
@@ -288,14 +288,12 @@ html {
   min-height: 740px;
   background: url(../images/cover-trains.jpg) no-repeat;
   background-size: cover;
-  background-position: 100%;
+
 }
 
 .cover__link {
   background-color: rgba(42, 44, 47, 0.3);
-  background-size: cover;
-  position: relative;
-  width: 100%;
+  max-width: 100%;
   min-height: 740px;
   margin: auto;
   display: flex;
@@ -304,8 +302,8 @@ html {
   text-align: center;
   text-decoration: none;
   color: white;
-  padding: 245px 0 32px 0;
   transition: background-color 0.2s linear;
+
 }
 
 .cover__link:hover {
@@ -314,6 +312,7 @@ html {
 }
 
 .cover__title {
+  position: relative;
   font-style: normal;
   font-weight: 900;
   font-size: 72px;
@@ -321,6 +320,7 @@ html {
   max-width: 560px;
   min-height: 152px;
   border: 1px solid black;
+  margin: 245px auto 32px;
 }
 .cover__subtitle {
   font-style: normal;
@@ -377,3 +377,39 @@ html {
   line-height: 16px;
   margin: 0;
 }
+
+@media screen and (max-width: 980px) {
+  .lead{
+  width: 100%;}
+
+  .intro{
+    width: 100%;}
+
+  .places {
+      width: 100%;}
+
+  .photo-grid__template {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);}
+
+  .cover {
+
+    }
+
+}
+
+
+@media screen and  (max-width: 600px) {
+  .photo-grid__template {
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and  (max-width: 320px) {
+  .photo-grid__template {
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: 1, 1fr;
+  }
+}
+
