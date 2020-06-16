@@ -426,7 +426,10 @@ html {
   }
   .cover {
     padding: 0;
+  }
 
+  .cover__link {
+  min-height: 640px;
   }
 }
 
@@ -484,6 +487,12 @@ html {
     padding: 115px 0;
 
   }
+
+  .footer {
+    padding: 88px 24px 24px;
+  }
+
+
 }
 
 
