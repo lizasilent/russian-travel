@@ -1,0 +1,29 @@
+.two-columns__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1;
+  margin: 0;
+}
+
+@media screen and (max-width: 999px) {
+  .two-columns__title {
+    text-align: left;
+    font-size: 42px;
+    line-height: 1.1;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .two-columns__title {
+    font-size: 42px;
+    line-height: 1.09;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .two-columns__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
+}

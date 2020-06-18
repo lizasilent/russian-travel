@@ -1,0 +1,14 @@
+.two-columns__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: white;
+  transition: opacity 0.2s linear;
+}
+
+.two-columns__link:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}

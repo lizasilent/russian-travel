@@ -1,0 +1,19 @@
+.two-columns__image {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+@media screen and (max-width: 665px) {
+  .two-columns__image {
+    min-width: calc(100% + 32px);
+    margin-left: -16px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .two-columns__image {
+    min-width: calc(100% + 32px);
+    margin-left: -16px;
+  }
+}

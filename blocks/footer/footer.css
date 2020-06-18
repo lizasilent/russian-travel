@@ -1,0 +1,31 @@
+@import url(../footer/__container/footer__container.css);
+@import url(../footer/__links/footer__links.css);
+@import url(../footer/__link/footer__link.css);
+@import url(../footer/__copyright/footer__copyright.css);
+
+.footer {
+  width: 100%;
+  position: relative;
+  padding: 92px 48px 24px;
+}
+
+@media screen and (max-width: 999px) {
+  .footer {
+    padding: 88px 24px 24px;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .footer {
+    width: 100%;
+    position: relative;
+    padding: 48px 48px 24px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .footer {
+    padding: 0;
+    width: 100%;
+  }
+}

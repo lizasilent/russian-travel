@@ -1,0 +1,22 @@
+.intro__card {
+  width: 68%;
+  min-height: 428px;
+}
+
+@media screen and (max-width: 999px) {
+  .intro__card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .intro__card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .intro__card {
+    width: 100%;
+  }
+}

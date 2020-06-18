@@ -1,0 +1,42 @@
+@import url(../intro/__card/intro__card.css);
+@import url(../intro/__list-item-accent/intro__list-item-accent.css);
+@import url(../intro/__list-item/intro__list-item.css);
+@import url(../intro/__list/intro__list.css);
+@import url(../intro/__text/intro__text.css);
+@import url(../intro/__title/intro__title.css);
+
+
+.intro {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .intro {
+    width: 100%;
+    padding: 0 48px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .intro {
+    width: 100%;
+    padding: 0 24px;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .intro {
+    width: 100%;
+    padding: 0 16px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .intro {
+    width: 100%;
+    padding: 0 16px;
+  }
+}

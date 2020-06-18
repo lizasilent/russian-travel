@@ -1,0 +1,14 @@
+@import url(../../header/__lang-link/_en/header__lang-link_en.css);
+@import url(../../header/__lang-link/_en/header__lang-link_ru.css);
+
+
+
+.header__lang-link {
+  color: white;
+  transition: opacity 0.2s linear;
+}
+
+.header__lang-link:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
