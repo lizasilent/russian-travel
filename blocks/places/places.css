@@ -1,3 +1,5 @@
+@import url(../places/__list/places__list.css);
+
 .places {
   position: relative;
   width: 80%;
