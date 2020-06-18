@@ -16,7 +16,7 @@
   background-color: #2a2c2f;
   color: white;
   margin: 0 auto;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Arial, sans-serif;
 }
 
 .header {
@@ -149,6 +149,21 @@
   line-height: 1.5;
 }
 
+.intro__list-item {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.intro__list-item-accent {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+
+}
+
 .photo-grid {
   position: relative;
   width: 100%;
@@ -187,6 +202,7 @@
   grid-template-rows: minmax(min-content, max-content) 1fr;
   grid-gap: 48px 40px;
   margin-bottom: 80px;
+  list-style-type: none;
 }
 .two-columns:last-child {
   margin-bottom: 92px;
