@@ -3,6 +3,7 @@
     .places__list {
         padding-left: 0;
     }
+}
     
 @media screen and (max-width: 470px){
     .places__list {
