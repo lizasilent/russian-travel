@@ -71,7 +71,7 @@
   
   @media screen and (max-width: 470px) {
     .cover__link {
-      min-height: 200px;
+      min-height: 216px;
       padding: 33px 16px;
     }
   
@@ -80,7 +80,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      min-height: 200px;
+      min-height: 216px;
     }
   }
   
