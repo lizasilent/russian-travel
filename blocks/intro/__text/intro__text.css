@@ -5,17 +5,3 @@
   line-height: 1.6;
   margin: 0 auto 32px auto;
 }
-
-@media screen and (max-width: 665px) {
-  .intro__text {
-    font-size: 12px;
-    line-height: 1.5;
-  }
-}
-
-@media screen and (max-width: 470px) {
-  .intro__text {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-}

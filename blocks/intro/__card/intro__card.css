@@ -1,11 +1,10 @@
 .intro__card {
-  width: 68%;
-  min-height: 428px;
+  max-width: 690px;
 }
 
 @media screen and (max-width: 999px) {
   .intro__card {
-    width: 100%;
+    max-width: 690px;
   }
 }
 
